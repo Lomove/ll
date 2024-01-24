@@ -1,2 +1,3 @@
 # ll
-Web for learn, JS complete
+Web for learn, JS complete.
+Ooops.
