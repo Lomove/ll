@@ -73,6 +73,8 @@ select {
 :root {
   --backgroung-color: bisque;
   --background-color-2: rgb(155, 42, 14);
+  --background-color-2-minor: rgb(212, 51, 11);
+  --background-color-3: grey;
 }
 
 @font-face {
@@ -132,8 +134,45 @@ body .t1 {
 }
 
 .index-slider-wrap {
+  position: relative;
   margin: auto;
   width: 800px;
   height: 150px;
   background-color: burlywood;
+}
+.index-slider-wrap .index-slider {
+  height: 100%;
+}
+.index-slider-wrap .index-slider .slide {
+  height: 100%;
+  background-color: aqua;
+}
+.index-slider-wrap .toggles-wrap {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+}
+.index-slider-wrap .toggles-wrap .toggles {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+  width: -moz-max-content;
+  width: max-content;
+}
+.index-slider-wrap .toggles-wrap .toggle {
+  height: 15px;
+  width: 15px;
+  background-color: var(--background-color-3);
+  border-radius: 10px;
+  border: 1px solid black;
+  transition: all linear 0.3s;
+  cursor: pointer;
+}
+.index-slider-wrap .toggles-wrap .toggle:hover {
+  background-color: var(--background-color-2-minor);
+}
+.index-slider-wrap .toggles-wrap .toggle.active {
+  background-color: var(--background-color-2);
 }
