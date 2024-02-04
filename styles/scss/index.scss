@@ -1,6 +1,15 @@
 @import 'cssDrop';
 @import 'responsive-font-size';
+@import 'vars';
+@import 'fonts';
+@import 'main';
 
 body {
-  color: red;
+  font-size: 2em;
+
+  .t1 {
+    font-family: 'Work';
+    // letter-spacing: -2px;
+    font-size: 0.5em;
+  }
 }

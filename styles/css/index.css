@@ -70,6 +70,57 @@ select {
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+:root {
+  --backgroung-color: bisque;
+  --background-color-2: rgb(155, 42, 14);
+}
+
+@font-face {
+  font-family: "Neucha";
+  src: url(../../fonts/Neucha-Regular.ttf);
+}
+@font-face {
+  font-family: "Work";
+  src: url(../../fonts/MontserratAlternates-Regular.ttf);
+}
 body {
-  color: red;
+  display: flex;
+  flex-direction: column;
+  font-family: "Neucha";
+  font-size: 2em;
+  background-color: var(--backgroung-color);
+}
+
+.site-header {
+  height: 10vh;
+  background-color: var(--background-color-2);
+}
+
+main {
+  flex-grow: 1;
+}
+
+.site-footer {
+  padding: 1em;
+  background-color: var(--background-color-2);
+}
+.site-footer p {
+  margin: auto;
+  text-align: center;
+}
+.site-footer .img-wrap {
+  margin: auto;
+  width: 10%;
+}
+.site-footer .img-wrap img {
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.75);
+}
+
+body {
+  font-size: 2em;
+}
+body .t1 {
+  font-family: "Work";
+  font-size: 0.5em;
 }
