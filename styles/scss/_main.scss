@@ -1,0 +1,44 @@
+// Опись тела всех страниц
+body {
+  display: flex;
+  flex-direction: column;
+
+  font-family: 'Neucha';
+  font-size: 2em;
+
+  background-color: var(--backgroung-color);
+}
+
+// Опись хедеров на всех страницах
+.site-header {
+  height: 10vh;
+
+  background-color: var(--background-color-2);
+}
+
+// Опись мейн-контента на всех страницах
+main {
+  flex-grow: 1;
+}
+
+// Опись подвала на всех страницах
+.site-footer {
+  padding: 1em;
+
+  background-color: var(--background-color-2);
+
+  p {
+    margin: auto;
+    text-align: center;
+  }
+
+  .img-wrap {
+    margin: auto;
+    width: 10%;
+
+    img {
+      border-radius: 20px;
+      box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.75);
+    }
+  }
+}
