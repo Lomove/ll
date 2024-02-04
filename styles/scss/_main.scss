@@ -11,9 +11,20 @@ body {
 
 // Опись хедеров на всех страницах
 .site-header {
-  height: 10vh;
+  height: 85px;
 
-  background-color: var(--background-color-2);
+  p {
+    height: 50px;
+    background-color: var(--background-color-2);
+  }
+
+  .omega-style-block {
+    margin: auto;
+    height: 50px;
+
+    background-color: var(--background-color-2);
+    // clip-path: path('M 0,0 \ l 25,0 \ c 0,50 60,50 60,0 \ l 25,0 \ c 0,50 60,50 60,0 \ l 25,0 \ c 0,50 60,50 60,0 \ l 25,0 \ c 0,50 60,50 60,0');
+  }
 }
 
 // Опись мейн-контента на всех страницах
@@ -34,7 +45,8 @@ main {
 
   .img-wrap {
     margin: auto;
-    width: 10%;
+    margin-top: 0.5em;
+    width: clamp(150px, 10%, 250px);
 
     img {
       border-radius: 20px;

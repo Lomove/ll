@@ -5,11 +5,17 @@
 @import 'main';
 
 body {
-  font-size: 2em;
-
   .t1 {
     font-family: 'Work';
     // letter-spacing: -2px;
     font-size: 0.5em;
   }
+}
+
+.index-slider-wrap {
+  margin: auto;
+  width: 800px;
+  height: 150px;
+
+  background-color: burlywood;
 }
