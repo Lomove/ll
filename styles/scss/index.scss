@@ -139,3 +139,10 @@ body {
     }
   }
 }
+
+// @import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/swiper-bundle.css';
+.swiper {
+  width: 600px;
+  height: 300px;
+}

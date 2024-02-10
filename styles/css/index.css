@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* Указываем box sizing */
+@import '../../node_modules/swiper/swiper-bundle.css';
 *,
 *::before,
 *::after {
@@ -232,4 +233,9 @@ body .t1 {
 }
 .index-slider-wrap .toggles-wrap .toggle.active {
   background-color: var(--background-color-2);
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
 }

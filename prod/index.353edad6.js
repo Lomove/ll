@@ -1,1 +1,0 @@
-{let e=document.querySelector(".omega-style-block"),t=document.documentElement.clientWidth,c=Math.trunc((t-25)/85),l=60*c+(c-1)*25,n=`path('M ${(t-l)/2-25},0  ${" l 25,0  c 0,50 60,50 60,0 ".repeat(c)}')`;e.style.clipPath=n}
