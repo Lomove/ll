@@ -4,22 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="styles/css/index.css" />
+    <link rel="stylesheet" href="./styles/css/index.css" />
+
+    <script type="module" defer src="./scripts/script.js"></script>
+
     <title>LL</title>
   </head>
   <body>
-    <header class="site-header">sdsdds</header>
-    <main>
-      <div class="index-slider">
+    <header class="site-header">
+      <p>sdsdsd</p>
 
+      <!-- Я поплыл... Мне НУЖНЫ КРИВЫЕ БЛОКИ -->
+      <div class="omega-style-block"></div>
+      <!-- Визуальный скрипт для этой вакханалии -->
+      <script src="./scripts/style-frame.js"></script>
+    </header>
+    <main>
+      <!-- Меееега слайдер -->
+      <div class="index-slider-wrap">
+        <button type="button" class="slider-btn slider-btn-left">
+          <svg width="50" height="50" viewBox="0 0 306 306">
+            <polygon points="247.35,35.7 211.65,0 58.65,153 211.65,306 247.35,270.3 130.05,153" />
+          </svg>
+        </button>
+
+        <button type="button" class="slider-btn slider-btn-right">
+          <svg width="50" height="50" viewBox="0 0 306 306">
+            <polygon points="58.65,267.75 175.95,153 58.65,35.7 94.35,0 247.35,153 94.35,306 " />
+          </svg>
+        </button>
+
+        <div class="index-slider">
+          <div class="slide" id="index-slide-1"><p>"Это супер магазииин"</p></div>
+          <div class="slide" id="index-slide-2"><p>"Это супер магазииин"</p></div>
+          <div class="slide" id="index-slide-3"><p>"Это супер магазииин"</p></div>
+          <div class="slide" id="index-slide-4"><p>"Это супер магазииин"</p></div>
+          <div class="slide" id="index-slide-5"><p>"Это супер магазииин"</p></div>
+        </div>
+
+        <!-- индикаторы-переключатели -->
+        <div class="toggles-wrap">
+          <div class="toggles">
+            <div class="toggle active" num="1"></div>
+            <div class="toggle" num="2"></div>
+            <div class="toggle" num="3"></div>
+            <div class="toggle" num="4"></div>
+            <div class="toggle" num="5"></div>
+          </div>
+        </div>
       </div>
+
       Привет мир!
       <p class="t1">Привет мир 2</p>
     </main>
     <footer class="site-footer">
-      <p>Недоручки делают недосайт, простите 	&#128517</p>
+      <p>Недоручки делают недосайт, простите &#128517;</p>
       <div class="img-wrap">
-        <img src="./img/Me.png" alt="Недоавтор">
+        <img src="./img/Me.png" alt="Недоавтор" />
       </div>
     </footer>
   </body>

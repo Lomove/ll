@@ -1,0 +1,1 @@
+document.querySelector(".index-slider"),console.log("Hellp Parcel?");
