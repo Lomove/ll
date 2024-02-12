@@ -11,19 +11,59 @@ body {
 
 // Опись хедеров на всех страницах
 .site-header {
-  height: 85px;
+  $site-header-height: 90px;
 
-  p {
-    height: 50px;
+  height: $site-header-height;
+
+  .header-top {
+    $site-header-top-height: calc($site-header-height * 0.55);
+
+    height: $site-header-top-height;
+    padding: 0 0.5em;
+
     background-color: var(--background-color-2);
+
+    & > ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+      justify-content: space-between;
+
+      // Настраиваем ссылочки, включая hover
+      a {
+        text-decoration: none;
+
+        transition: ease-out 0.3s;
+
+        &.a-home-logo:hover {
+          transform: scale(1.02);
+        }
+      }
+
+      .logo-wrap {
+        display: flex;
+
+        h1 {
+          font-size: 1em;
+          color: white;
+        }
+        svg {
+          $svg-size: calc($site-header-top-height * 0.9);
+          height: $svg-size;
+          width: $svg-size;
+          fill: white;
+        }
+      }
+    }
   }
 
+  // Пупырки блин
   .omega-style-block {
     margin: auto;
     height: 50px;
 
     background-color: var(--background-color-2);
-    // clip-path: path('M 0,0 \ l 25,0 \ c 0,50 60,50 60,0 \ l 25,0 \ c 0,50 60,50 60,0 \ l 25,0 \ c 0,50 60,50 60,0 \ l 25,0 \ c 0,50 60,50 60,0');
   }
 }
 
