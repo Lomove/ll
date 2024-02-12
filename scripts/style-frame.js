@@ -1,10 +1,13 @@
 'use strict';
 
 {
-  const styleBlock = document.querySelector('.omega-style-block');
+  // Блок констант
   const hillWidth = 60;
   const hillHeight = 50;
   const plainWidth = 25;
+
+  const styleBlock = document.querySelector('.omega-style-block');
+
   const viewPort = document.documentElement.clientWidth;
   // Шаблон прямой + кривой для наполненеия SVG
   const templateHillPlain = `\ l ${plainWidth},0 \ c 0,${hillHeight} ${hillWidth},${hillHeight} ${hillWidth},0 `;

@@ -96,11 +96,37 @@ body {
 }
 
 .site-header {
-  height: 85px;
+  height: 90px;
 }
-.site-header p {
-  height: 50px;
+.site-header .header-top {
+  height: 49.5px;
+  padding: 0 0.5em;
   background-color: var(--background-color-2);
+}
+.site-header .header-top > ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+.site-header .header-top > ul a {
+  text-decoration: none;
+  transition: ease-out 0.3s;
+}
+.site-header .header-top > ul a.a-home-logo:hover {
+  transform: scale(1.02);
+}
+.site-header .header-top > ul .logo-wrap {
+  display: flex;
+}
+.site-header .header-top > ul .logo-wrap h1 {
+  font-size: 1em;
+  color: white;
+}
+.site-header .header-top > ul .logo-wrap svg {
+  height: 44.55px;
+  width: 44.55px;
+  fill: white;
 }
 .site-header .omega-style-block {
   margin: auto;
